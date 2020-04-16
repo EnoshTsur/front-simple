@@ -1,0 +1,120 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    
+}
+
+.main {
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.lg-header {
+    border-radius: 7px;
+    box-shadow: 0 3px 5px rgb(184, 184, 184);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.data-inputs > h1 {
+    color: #5381ff;
+    text-shadow: 0 2px 3px darkgray;
+    font-size: 42px;
+}
+
+.data-inputs > input {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid rgb(161, 161, 255);
+    font-family: 'Comic Neue', cursive;
+}
+
+.data-inputs > input:hover {
+    border: none;
+    border-bottom: 1px solid rgb(71, 71, 255);
+}
+
+.data-inputs > input:focus {
+    border: none;
+    border-bottom: 1px solid rgb(54, 54, 255);
+    outline: none;
+}
+
+
+.data-inputs > button {
+    color: darkblue;
+    font-weight: 600;
+    margin: 1rem auto;
+    max-width: 50%;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(rgb(146, 170, 250), rgb(105, 187, 255));
+    box-shadow: 0 2px 3px grey;
+}
+
+.data-inputs > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.data-inputs > button:focus {
+    cursor: pointer;
+    outline: none;    
+}
+
+.data-inputs > button:active {
+    background: linear-gradient(rgb(77, 119, 255), rgb(20, 149, 255));
+}
+
+.lg-header>img {
+    max-width: 25rem;
+    border-radius: 7px;
+    box-shadow: 0 2px 3px rgb(94, 94, 94);
+}
+
+.data-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 985px) {
+    .lg-header {
+        flex-direction: column;
+        padding:1rem ;
+    }
+
+    .data-inputs {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .lg-header > img{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .data-inputs > h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .lg-header {
+        box-shadow: none;
+    }
+
+    .data-inputs {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .lg-header > img{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
